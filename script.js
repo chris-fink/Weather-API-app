@@ -37,10 +37,10 @@ function searchLocation(url) {
     })
 
         //Create HTML elements
-        const img = document.createElement('img');
-        const h1 = document.createElement('h1');
-        const h2 = document.createElement('h2');
-        const p = document.createElement('p');
+        document.getElementById("image").innerHTML = image;
+        document.getElementById("city").innerHTML = city;
+        document.getElementById("temp").innerHTML = temp;
+        document.getElementById("weather").innerHTML = weather;
 
             //Append elementsthe main elements
             main.appendChild(img);
@@ -50,9 +50,8 @@ function searchLocation(url) {
             img.src = `${data.weather.icon}`;
 
                 //Display API data
-                h1.innerHTML = `${data.name}`;
-                h2.innerHTML = `${Math.round(data.main.temp)} °F`;
-                p.innerHTML = `${data.weather.description}`;
+                //h1.innerHTML = `${data.name}`;
+                //h2.innerHTML = `${Math.round(data.main.temp)} °F`;
+                //p.innerHTML = `${data.weather.description}`;
 }
-
 
