@@ -1,74 +1,106 @@
-* {
-  background: linear-gradient(45deg, #F9FF00 0%, #8BD2FF 76%, #C59237 100%);
-}
-
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x1000/?landscape');
+  background-size: 2000px 1000px;
+  background-repeat: no-repeat;
+  font-size: 120%;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #21808d;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #21808d;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #21808d;
-  color: white;
-}
-
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #21808d;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #21808d;
-}
 .card {
-  position: absolute;
-  background: #fdfdfd;
-  height: 60%;
-  width: 40%;
-  border: 8px outset #969292;
-  border-radius: 40px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  align-items: center;
+  backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(3px) saturate(200%);
+    background-color: rgba(80, 96, 124, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
-.card-img-top{
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #fff7f72b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #fff7f72b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+img#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 4em;
+  width: 4em;
+  padding-bottom: 0vh;
+  padding-top: 50px;
+}
+h1.card-title {
+  text-align: center;
+  font-family: inherit;
+  font-size: 250%;
+  padding-top: 0vh;
+  padding-bottom: 2px;
+}
+h2.card-temp {
+  text-align: center;
+  align-content: center;
+  font-family: inherit;
+  font-size: 400%
+}
+p{
+  text-align: center;
   align-self: center;
+  font-family: inherit;
+  font-size: 110%;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
 }
