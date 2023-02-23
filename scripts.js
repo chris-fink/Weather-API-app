@@ -2,7 +2,7 @@
 
 //Create object for storing the functions and variables for the API
 let weather = {
-    "apiKey" : "7f520456e051f1332b94327cf4f33666",
+    "apiKey" : process.env.API_KEY,
 
     //Create fetch function to retrieve JSON
 fetchWeather: function (city) {
