@@ -1,8 +1,9 @@
 //url = https://api.openweathermap.org/data/2.5/weather?q={city name}&units=imperial&appid={API key}
 
+
 //Create object for storing the functions and variables for the API
 let weather = {
-    "apiKey" : process.env.API_KEY,
+    "apiKey" : "7f520456e051f1332b94327cf4f33666",
 
     //Create fetch function to retrieve JSON
 fetchWeather: function (city) {
@@ -28,7 +29,7 @@ fetchWeather: function (city) {
         //Display weather data on screen 
         document.querySelector(".card-title").innerText = name;
         document.querySelector(".card-img-top").src = 
-            "https://openweathermap.org/img/wn/" + icon + ".png";
+            "https://openweathermap.org/img/wn/" + icon + "@4x.png";
         document.querySelector(".card-weather").innerText = description.toUpperCase();
         document.querySelector(".card-temp").innerText = Math.round(temp) + "°F";
         document.querySelector(".card-humidity").innerText = 
