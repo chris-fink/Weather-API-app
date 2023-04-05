@@ -17,8 +17,8 @@ body {
   color: white;
   padding: 2em;
   border-radius: 30px;
-  width: 100%;
-  max-width: 420px;
+  width: 40vw;
+  /* max-width: 420px;  */
   margin: 1em;
   align-items: center;
   backdrop-filter: blur(3px) saturate(200%);
@@ -66,8 +66,6 @@ img#image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* height: 4em;
-  width: 4em; */
   padding-bottom: 0vh;
   padding-top: 0vh;
   margin-bottom: 0vh;
@@ -76,15 +74,17 @@ img#image {
 h1.card-title {
   text-align: center;
   font-family: inherit;
-  font-size: 250%;
+  font-size: 100%;
   padding-top: 0vh;
   padding-bottom: 2px;
+  margin: 0vh;
 }
 h2.card-temp {
   text-align: center;
   align-content: center;
   font-family: inherit;
-  font-size: 400%
+  font-size: 400%;
+  margin: 0vh;
 }
 p{
   text-align: center;
@@ -106,9 +106,100 @@ p{
   top: 0;
   left: 20px;
 }
+/*Ipad Mini */
+@media only screen and (min-height: 1000px) and (orientation: portrait) {  
+  img#image {
+    height: 20vh;
+    width: auto;
+  }
+  .search {
+    margin-top: 2em;
+  }
+  
+  button {
+    height: 90px;
+    width: 90px;
+  }
+  .card {
+    width: 80vw;
+  }
+  input.search-bar {
+    font-size: 200%;
+    height: 5vh;
+  }
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  h1.card-title {
+    font-size: 600%;
+  }
+  h2.card-temp {
+    font-size: 450%;
+  }
+  p#wind {
+    font-size: 200%;
+  }
+  P#humidity {
+    font-size: 200%;
+  }
+  p#weather {
+    margin: 10px;
+    font-size: 200%;
+  }
+}
+/* Surface Pro 7 */
+@media only screen and (min-height: 1300px) and (orientation: portrait) {
+  .search {
+    margin-top: 2em;
+  }
+  
+  button {
+    height: 90px;
+    width: 90px;
+  }
+  .card {
+    width: 80vw;
+  }
+  input.search-bar {
+    font-size: 200%;
+    height: 5vh;
+  }
+  img#image {
+    height: 20vh;
+    width: auto;
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  h1.card-title {
+    font-size: 500%;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+  }
+  h2.card-temp {
+    font-size: 600%;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+  }
+  p#wind {
+    font-size: 250%;
+  }
+  P#humidity {
+    font-size: 250%;
+    padding-top: 15px;
+    margin: 6px;
+  }
+  p#weather {
+    padding-top: 1em; 
+    margin: 0vh;
+    font-size: 250%;
+  }
+}
 
 
-/*Iphone SE*/
+
+/* Iphone SE
 @media only screen and (min-height: 568px) and (orientation: portrait) {
   body {
     background-size: 100% 100%;
@@ -125,11 +216,12 @@ p{
     padding-top: 0px;
     padding-bottom: 0px;
     height: 80vh;
-
+    /* width: 80vw; 
   }
-  /* img#image {
+   img#image {
+    margin-top: 1px;
     padding-top: 10px; 
-  } */
+  } 
   h1.card-title {
     margin: 5px;
   }
@@ -148,11 +240,11 @@ p{
   p#weather {
     padding-bottom: 0px;
     /* padding-top: 2px;
-    margin: 2px; */
+    margin: 2px; 
   }
 }
 
-/*Samsung Galaxy 8*/
+/*Samsung Galaxy 8
 @media only screen and (min-height: 700px) and (orientation: portrait) {
   .card {
     width: 70%;
@@ -163,6 +255,7 @@ p{
     padding-top: 0px;
     padding-bottom: 0px;
     height: 80vh;
+    /* width: 80vw; 
   }
   .search {
     margin-top: 1em;
@@ -170,7 +263,7 @@ p{
   /* img#image {
     margin-top: 2em;
     margin-bottom: 2em
-  } */
+  } 
   h1.card-title {
     font-size: 300%;
   }
@@ -186,10 +279,10 @@ p{
   /* p#weather {
    padding-top: 8px;
     margin: 6px; 
-  } */
+  } 
 }
 
-/*Samsung Galaxy A51/71*/
+/*Samsung Galaxy A51/71
 @media only screen and (min-height: 900px) and (orientation: portrait) {
   h1.card-title {
     font-size: 400%;
@@ -202,16 +295,16 @@ p{
     font-size: 150%;
   }
   p#weather {
-    /* margin-top: 3em; */
+    /* margin-top: 3em; 
     font-size: 150%;
   }
 }
 
-/*Ipad Mini*/
+/*Ipad Mini
 @media only screen and (min-height: 1000px) and (orientation: portrait) {  
   img#image {
     padding-top: .25em;
-    margin-top: 4em;
+    /* margin-top: 4em; 
   }
   h1.card-title {
     font-size: 600%;
@@ -236,7 +329,7 @@ p{
   }
 }
 
-/*IPad Air*/
+/*IPad Air
 @media only screen and (min-height: 1100px) and (orientation: portrait) {
   .search {
     margin-top: 1em;
@@ -249,7 +342,7 @@ p{
   }
 }
 
-/*Surface Pro 7*/
+/*Surface Pro 7
 @media only screen and (min-height: 1300px) and (orientation: portrait) {
   .search {
     margin-top: 2em;
@@ -267,10 +360,10 @@ p{
   button:hover {
     background: #7c7c7c6b;
   }
-  img#image {
+  /* img#image {
     margin-top: 6em;
     margin-bottom: 3em;
-  }
+  } 
   h1.card-title {
     font-size: 500%;
 
@@ -288,15 +381,15 @@ p{
     margin: 6px;
   }
   p#weather {
-    padding-top: 4em;
+    /* padding-top: 4em; 
     margin: 10px;
     font-size: 250%;
   }
 }
 
 
-/*LANDSCAPE MEDIA QUERIES*/
-/*Galaxy Fold landscape*/
+/*LANDSCAPE MEDIA QUERIES
+/*Galaxy Fold landscape
 @media only screen and (min-height: 250px) and (orientation: landscape) {  
   body {
     background-size: 100% 100%;
@@ -362,7 +455,7 @@ p{
 }
 
 
-/*Cell phone landscape*/
+/*Cell phone landscape
 @media only screen and (min-height: 320px) and (orientation: landscape) {
   body {
     background-size: 100% 100%;
@@ -423,7 +516,7 @@ p{
   }
 }
 
-/*Samsung Galaxy A51/71*/
+/*Samsung Galaxy A51/71
 @media only screen and (min-height: 400px) and (orientation: landscape) {
   .card.text-center {
     height: 85vh;
@@ -448,7 +541,7 @@ p{
   }
 }
 
-/*Nest Hub*/
+/*Nest Hub
 @media only screen and (min-height: 550px) and (orientation: landscape) {
   img#image {
     padding-top: 1em;
@@ -471,7 +564,7 @@ p{
   }
 }
 
-/*Surface Duo landscape*/
+/*Surface Duo landscape
 @media only screen and (min-height: 700px) and (orientation: landscape) {
   .card.text-center {
     height: 85vh;
@@ -512,7 +605,7 @@ p{
   }
 }
 
-/*IPad Mini Landscape view*/
+/*IPad Mini Landscape view
 @media only screen and (min-height: 750px) and (orientation: landscape) {
   .card {
     padding-top: 60em;
@@ -563,7 +656,7 @@ p{
   }
 }
 
-/*IPad Air Landscape*/
+/*IPad Air Landscape
 @media only screen and (min-height: 800px) and (orientation: landscape) {
   .search {
     padding-top: 1.5em;
@@ -608,4 +701,4 @@ p{
     margin: 2px;
     font-size: 200%;
   }
-}
+} 
