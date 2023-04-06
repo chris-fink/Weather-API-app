@@ -106,7 +106,114 @@ p{
   top: 0;
   left: 20px;
 }
-/*Ipad Mini */
+/* Portrait */
+/* Iphone SE, Surface Pro 7*/
+@media only screen and (min-height: 568px) and (orientation: portrait) {
+  body {
+    background-size: 100% 100%;
+  }
+  .card {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 60em;
+    height: 100vh;
+  }
+  .card.text-center {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 80vh;
+    width: 80vw; 
+  }
+   img#image {
+    margin-top: 1px;
+    padding-top: 10px; 
+  } 
+  h1.card-title {
+    margin: 5px;
+  }
+  h2.card-temp {
+    margin: 1px;
+  }
+  p#wind {
+    padding-top: 2px;
+    margin: 2px;
+  }
+  P#humidity {
+    padding-bottom: 0px;
+    padding-top: 2px;
+    margin: 2px;
+  }
+  p#weather {
+    padding-bottom: 0px;
+    padding-top: 2px;
+    margin: 2px; 
+  }
+}
+
+/* Samsung Galaxy 8 */
+@media only screen and (min-height: 700px) and (orientation: portrait) {
+  .card {
+    width: 70%;
+  }
+  .card.text-center {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 80vh;
+    width: 80vw; 
+  }
+  .search {
+    margin-top: 1em;
+  }
+  img#image {
+    position: relative;
+    margin: 0vh;
+    padding-top: 0;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1.card-title {
+    font-size: 300%;
+  }
+  h2.card-temp {
+    font-size: 450%;
+  }
+  p#wind {
+    padding-top: 18px;
+  }
+  P#humidity {
+    padding-top: 10px;
+  }
+  p#weather {
+    padding-top: 8px;
+    margin: 6px; 
+  } 
+}
+
+/* Samsung Galaxy A51/71 */
+@media only screen and (min-height: 900px) and (orientation: portrait) {
+  h1.card-title {
+    font-size: 400%;
+  }
+  p#wind {
+    font-size: 150%;
+  }
+  P#humidity {
+    margin: 2px;
+    font-size: 150%;
+  }
+  p#weather {
+     margin-top: 3em; 
+    font-size: 150%;
+  }
+}
+
+/*Ipad Mini*/
 @media only screen and (min-height: 1000px) and (orientation: portrait) {  
   img#image {
     height: 20vh;
@@ -199,135 +306,73 @@ p{
 
 
 
-/* Iphone SE
-@media only screen and (min-height: 568px) and (orientation: portrait) {
-  body {
-    background-size: 100% 100%;
-  }
-  .card {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 60em;
-    height: 100vh;
-  }
-  .card.text-center {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    height: 80vh;
-    /* width: 80vw; 
-  }
-   img#image {
-    margin-top: 1px;
-    padding-top: 10px; 
+/* Landscape */
+/*Nest Hub*/
+@media only screen and (min-height: 550px) and (orientation: landscape) {
+   .text-center{
+    height: 70vh;
   } 
-  h1.card-title {
-    margin: 5px;
-  }
-  h2.card-temp {
-    margin: 1px;
-  }
-  p#wind {
-    padding-top: 2px;
-    margin: 2px;
-  }
-  P#humidity {
-    padding-bottom: 0px;
-    padding-top: 2px;
-    margin: 2px;
-  }
-  p#weather {
-    padding-bottom: 0px;
-    /* padding-top: 2px;
-    margin: 2px; 
-  }
-}
-
-/*Samsung Galaxy 8
-@media only screen and (min-height: 700px) and (orientation: portrait) {
-  .card {
-    width: 70%;
-  }
-  .card.text-center {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    height: 80vh;
-    /* width: 80vw; 
-  }
-  .search {
-    margin-top: 1em;
-  }
-  /* img#image {
-    margin-top: 2em;
-    margin-bottom: 2em
-  } 
-  h1.card-title {
-    font-size: 300%;
-  }
-  h2.card-temp {
-    font-size: 450%;
-  }
-  p#wind {
-    padding-top: 18px;
-  }
-  P#humidity {
-    padding-top: 10px;
-  }
-  /* p#weather {
-   padding-top: 8px;
-    margin: 6px; 
-  } 
-}
-
-/*Samsung Galaxy A51/71
-@media only screen and (min-height: 900px) and (orientation: portrait) {
-  h1.card-title {
-    font-size: 400%;
-  }
-  p#wind {
-    font-size: 150%;
-  }
-  P#humidity {
-    margin: 2px;
-    font-size: 150%;
-  }
-  p#weather {
-    /* margin-top: 3em; 
-    font-size: 150%;
-  }
-}
-
-/*Ipad Mini
-@media only screen and (min-height: 1000px) and (orientation: portrait) {  
   img#image {
     padding-top: .25em;
-    /* margin-top: 4em; 
+    margin-top: 0vh;
+    padding-top: 0vh;
   }
   h1.card-title {
-    font-size: 600%;
-    margin: 15px;
+    font-size: 250%;
   }
   h2.card-temp {
-    font-size: 450%;
-    margin: 20px;
+    font-size: 200%
   }
   p#wind {
-    padding-top: 18px;
-    font-size: 200%;
+    margin: 0vh;
+    font-size: 100%;
   }
   P#humidity {
-    font-size: 200%;
-    padding-top: 10px;
+    margin: 0vh;
+    font-size: 100%;
   }
   p#weather {
-    padding-top: 40px;
-    margin: 10px;
-    font-size: 200%;
+    margin: 0vh;
+    font-size: 100%;
   }
 }
+
+/*Nest Hub Max, IPad Air, IPad Mini Surface Pro 7, Landscape view*/
+@media only screen and (min-height: 750px) and (orientation: landscape) {
+  .text-center{
+   height: 70vh;
+ } 
+ img#image {
+   padding-top: .25em;
+   margin-top: 0vh;
+   padding-top: 0vh;
+ }
+ h1.card-title {
+   font-size: 300%;
+ }
+ h2.card-temp {
+   font-size: 300%
+ }
+ p#wind {
+   margin: 0vh;
+   font-size: 150%;
+ }
+ P#humidity {
+   margin-top: 4vh;
+   font-size: 150%;
+ }
+ p#weather {
+   margin: 0vh;
+   font-size: 200%;
+ }
+}
+
+
+
+
+
+
+
 
 /*IPad Air
 @media only screen and (min-height: 1100px) and (orientation: portrait) {
@@ -342,50 +387,7 @@ p{
   }
 }
 
-/*Surface Pro 7
-@media only screen and (min-height: 1300px) and (orientation: portrait) {
-  .search {
-    margin-top: 2em;
-  }
-  
-  button {
-    height: 50px;
-    width: 50px;
-  }
-  
-  input.search-bar {
-    font-size: 150%;
-  }
-  
-  button:hover {
-    background: #7c7c7c6b;
-  }
-  /* img#image {
-    margin-top: 6em;
-    margin-bottom: 3em;
-  } 
-  h1.card-title {
-    font-size: 500%;
 
-  }
-  h2.card-temp {
-    font-size: 400%;
-  }
-  p#wind {
-    padding-top: 18px;
-    font-size: 200%;
-  }
-  P#humidity {
-    font-size: 200%;
-    padding-top: 15px;
-    margin: 6px;
-  }
-  p#weather {
-    /* padding-top: 4em; 
-    margin: 10px;
-    font-size: 250%;
-  }
-}
 
 
 /*LANDSCAPE MEDIA QUERIES
@@ -541,28 +543,7 @@ p{
   }
 }
 
-/*Nest Hub
-@media only screen and (min-height: 550px) and (orientation: landscape) {
-  img#image {
-    padding-top: 1em;
-  }
-  h1.card-title {
-    font-size: 350%;
-  }
-  h2.card-temp {
-    font-size: 400%
-  }
-  p#wind {
-    font-size: 150%;
-  }
-  P#humidity {
-    font-size: 150%;
-  }
-  p#weather {
-    padding-top: 1em;
-    font-size: 150%;
-  }
-}
+
 
 /*Surface Duo landscape
 @media only screen and (min-height: 700px) and (orientation: landscape) {
@@ -605,100 +586,3 @@ p{
   }
 }
 
-/*IPad Mini Landscape view
-@media only screen and (min-height: 750px) and (orientation: landscape) {
-  .card {
-    padding-top: 60em;
-    height: 100vh;
-  }
-  .search {
-    padding-top: 1.5em;
-  }
-  button {
-    height: 40px;
-    width: 40px;
-  }
-  input.search-bar {
-    padding: 1em 1em;
-    font-size: 80%;
-  }
-  img#image {
-    height: 4em;
-    width: 4em;
-    padding-bottom: 2vh;
-    padding-top: 8vh;
-  }
-  h1.card-title {
-    font-size: 400%;
-    padding-bottom: 0px;
-  }
-  h2.card-temp {
-    font-size: 400%
-  }
-  p{
-    font-size: 80%;
-  }
-  p#wind {
-    padding-top: 2px;
-    margin: 2px;
-    font-size: 125%;
-  }
-  P#humidity {
-    padding-bottom: 0px;
-    padding-top: 2px;
-    margin: 2px;
-    font-size: 130%;
-  }
-  p#weather {
-    padding-bottom: 0px;
-    padding-top: 2px;
-    margin: 2px;
-  }
-}
-
-/*IPad Air Landscape
-@media only screen and (min-height: 800px) and (orientation: landscape) {
-  .search {
-    padding-top: 1.5em;
-  }
-  button {
-    height: 40px;
-    width: 40px;
-  }
-  
-  input.search-bar {
-    padding: 1em 1em;
-    font-size: 80%;
-  }
-  img#image {
-    padding-bottom: 2vh;
-    padding-top: 8vh;
-    height: 4em;
-    width: 4em;
-  }
-  h1.card-title {
-    font-size: 500%;
-    padding-bottom: 0px;
-  }
-  h2.card-temp {
-    font-size: 500%
-  }
-  p{
-    font-size: 80%;
-  }
-  p#wind {
-    padding-top: 2px;
-    margin: 2px;
-    font-size: 150%;
-  }
-  P#humidity {
-    padding-top: 2px;
-    margin: 2px;
-    font-size: 150%;
-  }
-  p#weather {
-    padding-top: 2px;
-    margin: 2px;
-    font-size: 200%;
-  }
-} 
